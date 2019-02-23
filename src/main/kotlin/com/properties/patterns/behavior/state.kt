@@ -1,4 +1,4 @@
-package com.properties.patterns
+package com.properties.patterns.behavior
 
 sealed class AuthorizationState
 
@@ -8,7 +8,8 @@ class Authorized(val userLogin: String) : AuthorizationState()
 
 class AuthorizationPresenter {
 
-    private var state: AuthorizationState = Unauthorized
+    private var state: AuthorizationState =
+        Unauthorized
 
     fun loginUser(userName: String) {
         state = Authorized(userName)

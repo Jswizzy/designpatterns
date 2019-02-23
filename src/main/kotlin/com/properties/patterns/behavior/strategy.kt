@@ -1,4 +1,4 @@
-package com.properties.patterns
+package com.properties.patterns.behavior
 
 typealias StringFormatter = (String) -> String
 

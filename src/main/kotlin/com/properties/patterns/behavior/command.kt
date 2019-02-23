@@ -1,4 +1,4 @@
-package com.properties.patterns
+package com.properties.patterns.behavior
 
 interface OrderCommand {
     fun execute()
